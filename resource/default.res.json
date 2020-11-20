@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,egret_icon_png,description_json,垃圾袋-干垃圾_png,果皮-湿垃圾_png,海绵-干垃圾_png,烟头-干垃圾_png,电池-有害垃圾_png,纸箱-可回收_png,罐头-可回收_png,西瓜皮-湿垃圾_png,贝壳-干垃圾_png,骨头-湿垃圾_png,bg_png,recy-collection_png,dry-collection_png,wet-collection_png,harm-collection_png",
 			"name": "preload"
 		}
 	],
@@ -122,11 +122,6 @@
 			"name": "track_sb_png"
 		},
 		{
-			"url": "assets/bg.jpg",
-			"type": "image",
-			"name": "bg_jpg"
-		},
-		{
 			"url": "assets/egret_icon.png",
 			"type": "image",
 			"name": "egret_icon_png"
@@ -135,6 +130,81 @@
 			"name": "description_json",
 			"type": "json",
 			"url": "config/description.json"
+		},
+		{
+			"name": "垃圾袋-干垃圾_png",
+			"type": "image",
+			"url": "assets/game1/垃圾袋-干垃圾.png"
+		},
+		{
+			"name": "果皮-湿垃圾_png",
+			"type": "image",
+			"url": "assets/game1/果皮-湿垃圾.png"
+		},
+		{
+			"name": "海绵-干垃圾_png",
+			"type": "image",
+			"url": "assets/game1/海绵-干垃圾.png"
+		},
+		{
+			"name": "烟头-干垃圾_png",
+			"type": "image",
+			"url": "assets/game1/烟头-干垃圾.png"
+		},
+		{
+			"name": "电池-有害垃圾_png",
+			"type": "image",
+			"url": "assets/game1/电池-有害垃圾.png"
+		},
+		{
+			"name": "纸箱-可回收_png",
+			"type": "image",
+			"url": "assets/game1/纸箱-可回收.png"
+		},
+		{
+			"name": "罐头-可回收_png",
+			"type": "image",
+			"url": "assets/game1/罐头-可回收.png"
+		},
+		{
+			"name": "西瓜皮-湿垃圾_png",
+			"type": "image",
+			"url": "assets/game1/西瓜皮-湿垃圾.png"
+		},
+		{
+			"name": "贝壳-干垃圾_png",
+			"type": "image",
+			"url": "assets/game1/贝壳-干垃圾.png"
+		},
+		{
+			"name": "骨头-湿垃圾_png",
+			"type": "image",
+			"url": "assets/game1/骨头-湿垃圾.png"
+		},
+		{
+			"name": "bg_png",
+			"type": "image",
+			"url": "assets/game1/bg.png"
+		},
+		{
+			"name": "recy-collection_png",
+			"type": "image",
+			"url": "assets/ashcans/recy-collection.png"
+		},
+		{
+			"name": "dry-collection_png",
+			"type": "image",
+			"url": "assets/ashcans/dry-collection.png"
+		},
+		{
+			"name": "wet-collection_png",
+			"type": "image",
+			"url": "assets/ashcans/wet-collection.png"
+		},
+		{
+			"name": "harm-collection_png",
+			"type": "image",
+			"url": "assets/ashcans/harm-collection.png"
 		}
 	]
 }
