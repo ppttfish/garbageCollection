@@ -13,25 +13,18 @@ class Ashcan extends egret.DisplayObjectContainer {
 	// 有害垃圾桶
 	private harm_collection: egret.Bitmap
 
-	private collection_widht: number = 137
-	private collection_height: number = 170
-	
-	private createBitmapByName(name: string): egret.Bitmap {
-        let result = new egret.Bitmap();
-        let texture: egret.Texture = RES.getRes(name);
-        result.texture = texture;
-        return result;
-    }
+	private collection_widht: number = 137 * 0.78
+	private collection_height: number = 170 * 0.78
 
 	private init() {
-		this.dry_collection = this.createBitmapByName('dry-collection_png')
-		this.wet_collection = this.createBitmapByName('wet-collection_png')
-		this.recy_collection = this.createBitmapByName('recy-collection_png')
-		this.harm_collection = this.createBitmapByName('harm-collection_png')
-		this.setColletionSize(137, 170)
-		this.setColletionLocation({ x: 45, y: 620 }, 42)
+		this.dry_collection = GameUtil.createBitmapByName('dry-collection_png')
+		this.wet_collection = GameUtil.createBitmapByName('wet-collection_png')
+		this.recy_collection = GameUtil.createBitmapByName('recy-collection_png')
+		this.harm_collection = GameUtil.createBitmapByName('harm-collection_png')
+		this.setColletionSize(this.collection_widht, this.collection_height)
+		
+		this.setColletionLocation({ x: 45, y: GameUtil.instance.getStageHeight - 60 - this.collection_height}, 42)
 
-		console.log('dry_collection', this.dry_collection)
 		this.addChild(this.dry_collection)
 		this.addChild(this.wet_collection)
 		this.addChild(this.recy_collection)
@@ -60,10 +53,10 @@ class Ashcan extends egret.DisplayObjectContainer {
 		this.wet_collection.x = start.x + this.collection_widht + gap
 		this.wet_collection.y = start.y
 
-		this.recy_collection.x = (start.x + this.collection_widht + gap) * 2
+		this.recy_collection.x =  this.collection_widht + this.wet_collection.x + gap
 		this.recy_collection.y = start.y
 
-		this.harm_collection.x = (start.x + this.collection_widht + gap) * 3
+		this.harm_collection.x =  this.collection_widht + this.recy_collection.x + gap
 		this.harm_collection.y = start.y
 		
 	}

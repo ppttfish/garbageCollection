@@ -2,6 +2,39 @@ class GameUtil {
 	public constructor() {
 	}
 
+    private static gameUtil: GameUtil
+    private stageHeight: number
+    private stageWidth: number
+
+    public static get instance() {
+        if (!this.gameUtil) {
+            this.gameUtil = new GameUtil()
+        }
+        return this.gameUtil
+    }
+
+    /**
+     * 设置舞台高度
+     */
+    public setStageHeight(height: number) {
+        this.stageHeight = height
+    }
+
+    public setStageWidth(width: number) {
+        this.stageWidth = width
+    }
+
+    /**
+     * 获取舞台高度
+     */
+    public get getStageHeight() {
+        return this.stageHeight
+    }
+
+    public get getStageWidth() {
+        return this.stageWidth
+    }
+
 	/**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
      * Create a Bitmap object according to name keyword.As for the property of name please refer to the configuration file of resources/resource.json.

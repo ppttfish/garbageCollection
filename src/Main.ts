@@ -99,31 +99,11 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        
-        let sky = this.createBitmapByName("bg_png");
-        this.addChild(sky);
-        let stageW = this.stage.stageWidth;
-        let stageH = this.stage.stageHeight;
-        sky.width = 952
-        console.log('stageW', stageW)
-        sky.height = stageH;
-        sky.x = 0
-        sky.y = 0
-
-        let flag = 0
-        sky.touchEnabled = true
-        let x:number
-        sky.addEventListener(egret.TouchEvent.TOUCH_BEGIN, touchStart, this)
-        sky.addEventListener(egret.TouchEvent.TOUCH_MOVE, move, this)
-
-        function touchStart(e: egret.TouchEvent) {
-            x = e.stageX - sky.x
-        }
-        function move(e: egret.TouchEvent) {
-            if (Math.abs(e.stageX - x) < 312 && e.stageX - x < 0) {
-                sky.x = e.stageX - x
-            }
-        }
+        GameUtil.instance.setStageHeight(this.stage.stageHeight)
+        GameUtil.instance.setStageWidth(this.stage.stageWidth)
+        console.log('GameUtil.instance.setStageWidth', this.stage.stageWidth)
+        const screen1 = new BaseScreen()
+        this.addChild(screen1) 
 
         const ashcan = new Ashcan()
         this.addChild(ashcan)
