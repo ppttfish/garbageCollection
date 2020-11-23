@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,egret_icon_png,description_json,垃圾袋-干垃圾_png,果皮-湿垃圾_png,海绵-干垃圾_png,烟头-干垃圾_png,电池-有害垃圾_png,纸箱-可回收_png,罐头-可回收_png,贝壳-干垃圾_png,骨头-湿垃圾_png,bg_png,recy-collection_png,dry-collection_png,wet-collection_png,harm-collection_png,xiguapi-wet_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,egret_icon_png,description_json,bg_png,recy-collection_png,dry-collection_png,wet-collection_png,harm-collection_png,beike_dry_png,dianchi_harm_png,guantou_recy_png,guopi_wet_png,gutou_wet_png,haimian_dry_png,lajidai_dry_png,xiguapi_wet_png,yantou_dry_png,zhixiang_recy_png",
 			"name": "preload"
 		}
 	],
@@ -132,51 +132,6 @@
 			"url": "config/description.json"
 		},
 		{
-			"name": "垃圾袋-干垃圾_png",
-			"type": "image",
-			"url": "assets/game1/垃圾袋-干垃圾.png"
-		},
-		{
-			"name": "果皮-湿垃圾_png",
-			"type": "image",
-			"url": "assets/game1/果皮-湿垃圾.png"
-		},
-		{
-			"name": "海绵-干垃圾_png",
-			"type": "image",
-			"url": "assets/game1/海绵-干垃圾.png"
-		},
-		{
-			"name": "烟头-干垃圾_png",
-			"type": "image",
-			"url": "assets/game1/烟头-干垃圾.png"
-		},
-		{
-			"name": "电池-有害垃圾_png",
-			"type": "image",
-			"url": "assets/game1/电池-有害垃圾.png"
-		},
-		{
-			"name": "纸箱-可回收_png",
-			"type": "image",
-			"url": "assets/game1/纸箱-可回收.png"
-		},
-		{
-			"name": "罐头-可回收_png",
-			"type": "image",
-			"url": "assets/game1/罐头-可回收.png"
-		},
-		{
-			"name": "贝壳-干垃圾_png",
-			"type": "image",
-			"url": "assets/game1/贝壳-干垃圾.png"
-		},
-		{
-			"name": "骨头-湿垃圾_png",
-			"type": "image",
-			"url": "assets/game1/骨头-湿垃圾.png"
-		},
-		{
 			"name": "bg_png",
 			"type": "image",
 			"url": "assets/game1/bg.png"
@@ -202,9 +157,54 @@
 			"url": "assets/ashcans/harm-collection.png"
 		},
 		{
-			"name": "xiguapi-wet_png",
+			"name": "beike_dry_png",
 			"type": "image",
-			"url": "assets/game1/xiguapi-wet.png"
+			"url": "assets/game1/beike_dry.png"
+		},
+		{
+			"name": "dianchi_harm_png",
+			"type": "image",
+			"url": "assets/game1/dianchi_harm.png"
+		},
+		{
+			"name": "guantou_recy_png",
+			"type": "image",
+			"url": "assets/game1/guantou_recy.png"
+		},
+		{
+			"name": "guopi_wet_png",
+			"type": "image",
+			"url": "assets/game1/guopi_wet.png"
+		},
+		{
+			"name": "gutou_wet_png",
+			"type": "image",
+			"url": "assets/game1/gutou_wet.png"
+		},
+		{
+			"name": "haimian_dry_png",
+			"type": "image",
+			"url": "assets/game1/haimian_dry.png"
+		},
+		{
+			"name": "lajidai_dry_png",
+			"type": "image",
+			"url": "assets/game1/lajidai_dry.png"
+		},
+		{
+			"name": "xiguapi_wet_png",
+			"type": "image",
+			"url": "assets/game1/xiguapi_wet.png"
+		},
+		{
+			"name": "yantou_dry_png",
+			"type": "image",
+			"url": "assets/game1/yantou_dry.png"
+		},
+		{
+			"name": "zhixiang_recy_png",
+			"type": "image",
+			"url": "assets/game1/zhixiang_recy.png"
 		}
 	]
 }

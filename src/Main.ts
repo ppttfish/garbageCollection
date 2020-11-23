@@ -104,9 +104,10 @@ class Main extends eui.UILayer {
         console.log('GameUtil.instance.setStageWidth', this.stage.stageWidth)
         const screen1 = new BaseScreen()
         this.addChild(screen1) 
-
+        GameUtil.instance.setBg(screen1)
         const ashcan = new Ashcan()
         this.addChild(ashcan)
+        GameUtil.instance.addAshcanToList(ashcan.$children)
     }
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
