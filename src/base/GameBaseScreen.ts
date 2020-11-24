@@ -1,4 +1,4 @@
-class BaseScreen extends egret.DisplayObjectContainer {
+class GameBaseScreen extends egret.DisplayObjectContainer {
 	public constructor() {
 		super()
 		this.init()
@@ -9,9 +9,8 @@ class BaseScreen extends egret.DisplayObjectContainer {
 
 	private init() {
 		this.bg = GameUtil.createBitmapByName("bg_png")
-        
-        let stageW = GameUtil.instance.getStageWidth
-        let stageH =  GameUtil.instance.getStageHeight
+        let stageW = ScenesController.instance.getStageWidth
+        let stageH = ScenesController.instance.getStageHeight
 
         this.bg.width = 1400
         this.bg.height = stageH;
@@ -42,6 +41,11 @@ class BaseScreen extends egret.DisplayObjectContainer {
             this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, move, this);
         }
 	}
+
+    
+    public get getBg() {
+        return this.bg
+    }
 
     private setGarbages() {
         const guantou_recy = new Garbages('guantou_recy_png',

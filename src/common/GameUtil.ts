@@ -6,8 +6,7 @@ class GameUtil {
     private stageHeight: number
     private stageWidth: number
 
-    private _bg: egret.DisplayObjectContainer
-
+    private _bg: GameBaseScreen
     private ashcanList = []
 
     public static get instance() {
@@ -17,7 +16,7 @@ class GameUtil {
         return this.gameUtil
     }
 
-    public setBg(bg: egret.DisplayObjectContainer) {
+    public setBg(bg) {
         this._bg = bg 
     }
 
@@ -85,8 +84,8 @@ class GameUtil {
      * 两个图形碰撞检测
      */
     public isHit(rect1, rect2) {
-        return  rect1.x - this._bg.x < rect2.x  + rect2.width &&
-                rect1.x - this._bg.x  + rect1.width > rect2.x &&
+        return  rect1.x + this._bg.x < rect2.x  + rect2.width &&
+                rect1.x + this._bg.x  + rect1.width > rect2.x &&
                 rect1.y < rect2.y + rect2.height &&
                 rect1.height + rect1.y > rect2.y
     }

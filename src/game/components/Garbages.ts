@@ -3,7 +3,6 @@ class Garbages extends egret.DisplayObjectContainer {
 		super()
 		this.garbage = GameUtil.createBitmapByName(img)
 		this.addChild(this.garbage)
-		console.log('this1', this)
 		this.garbage.width = size.width
 		this.garbage.height = size.height
 		this.type = type
@@ -45,11 +44,7 @@ class Garbages extends egret.DisplayObjectContainer {
 		let flag2 = GameUtil.instance.isHit(this.garbage, ashcanList[1])
 		let flag3 = GameUtil.instance.isHit(this.garbage, ashcanList[2])
 		let flag4 = GameUtil.instance.isHit(this.garbage, ashcanList[3])
-		console.log('flag1', flag1)
-		console.log('flag2', flag2)
-		console.log('flag3', flag3)
-		console.log('flag4', flag4)
-		console.log('type', this.type)
+
 		if (flag1 && this.type === 'dry') {
 			this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.touchMove, this);
 			this.parent.removeChild(this)
@@ -60,7 +55,6 @@ class Garbages extends egret.DisplayObjectContainer {
 			this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.touchMove, this);
 			this.parent.removeChild(this)
 		} else if (flag4 && this.type === 'harm') {
-			console.log('x', ashcanList[3])
 			this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.touchMove, this);
 			this.parent.removeChild(this)
 		}

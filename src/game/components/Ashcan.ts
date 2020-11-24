@@ -23,7 +23,7 @@ class Ashcan extends egret.DisplayObjectContainer {
 		this.harm_collection = GameUtil.createBitmapByName('harm-collection_png')
 		this.setColletionSize(this.collection_widht, this.collection_height)
 		
-		this.setColletionLocation({ x: 45, y: GameUtil.instance.getStageHeight - 20 - this.collection_height}, 42)
+		this.setColletionLocation({ x: 45, y: ScenesController.instance.getStageHeight - 20 - this.collection_height}, 42)
 
 		this.addChild(this.dry_collection)
 		this.addChild(this.wet_collection)

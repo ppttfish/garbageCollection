@@ -99,15 +99,20 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        GameUtil.instance.setStageHeight(this.stage.stageHeight)
-        GameUtil.instance.setStageWidth(this.stage.stageWidth)
-        console.log('GameUtil.instance.setStageWidth', this.stage.stageWidth)
-        const screen1 = new BaseScreen()
-        this.addChild(screen1) 
-        GameUtil.instance.setBg(screen1)
-        const ashcan = new Ashcan()
-        this.addChild(ashcan)
-        GameUtil.instance.addAshcanToList(ashcan.$children)
+        const container = new egret.DisplayObjectContainer()
+        this.addChild(container)
+
+        ScenesController.instance.setStage(container)
+        ScenesController.instance.setStageHeight(this.stage.stageHeight)
+        ScenesController.instance.setStageWidth(this.stage.stageWidth)
+        ScenesController.instance.init()
+        console.log('GameUtil.instance.setStageWidth', this.stage.stageHeight)
+        // const screen1 = new GameBaseScreen()
+        // this.addChild(screen1) 
+        // GameUtil.instance.setBg(screen1.getBg)
+        // const ashcan = new Ashcan()
+        // this.addChild(ashcan)
+        // GameUtil.instance.addAshcanToList(ashcan.$children)
     }
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
